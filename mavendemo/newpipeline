@@ -1,0 +1,10 @@
+node{
+stage('SCM Checkout')
+{
+git 'https://github.com/sumit9090/pipeline/new/master/mavendemo'
+}
+stage('Compile-Package')
+{
+sh 'mvn package'
+}
+}
